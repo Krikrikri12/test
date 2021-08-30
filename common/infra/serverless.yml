@@ -9,7 +9,7 @@ projectDir: ../../
 
 provider:
     name: aws
-    region: {opt:region, 'us-east-1'}
+    region: ${opt:region, self:provider.region, "us-east-1"}
     runtime: ${file(../serverless/provider-settings.yml):runtime}
     stage: ${opt:stage,'dev'}
     logRetentionInDays: ${file(../serverless/provider-settings.yml):logRetentionInDays}
