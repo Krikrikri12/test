@@ -8,10 +8,10 @@ variablesResolutionMode: 20210326
 
 provider:
     name: aws
-    region: ${file(../serverless/provider-settings.yml):region}
-    runtime: ${file(../serverless/provider-settings.yml):runtime}
+    region: ${file(projectDir: ../serverless/provider-settings.yml):region}
+    runtime: ${file(projectDir: ../serverless/provider-settings.yml):runtime}
     stage: ${opt:stage,'dev'}
-    logRetentionInDays: ${file(../serverless/provider-settings.yml):logRetentionInDays}
+    logRetentionInDays: ${file(projectDir: ../serverless/provider-settings.yml):logRetentionInDays}
     stackPolicy:
     -   Effect: Allow
         Principal: '*'
