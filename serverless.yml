@@ -1,5 +1,7 @@
 # Stack containing core shared infrastructure resources for the eventsapp sample app.
-service: eventsapp-infra
+org: krikrikri12
+app: test
+service: test
 
 provider:
     name: aws
