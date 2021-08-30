@@ -33,7 +33,7 @@ Resources:
 Outputs:
     PhotosBucket:
         Value: !Ref PhotosBucket
-    PhotosCdnDistributionId:
-        Value: !Ref PhotosCdnDistribution
+    #PhotosCdnDistributionId:
+       # Value: !Ref PhotosCdnDistribution
     PhotosCdnDistributionDomainName:
         Value: !GetAtt PhotosCdnDistribution.DomainName
