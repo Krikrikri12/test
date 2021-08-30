@@ -1,5 +1,5 @@
 # Stack containing core shared infrastructure resources for the eventsapp sample app.
-org: krikrikri12
+#org: krikrikri12
 app: test
 service: test
 
