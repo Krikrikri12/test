@@ -40,7 +40,7 @@ Resources:
                     -   DomainName: !Sub '${self:custom.photosBucketName}.s3.amazonaws.com'
                         Id: PhotosBucketS3Origin
                         S3OriginConfig:
-                            OriginAccessIdentity: !Join ['', ['origin-access-identity/cloudfront/', !Ref CloudFrontOriginAccessIdentity]]
+                            OriginAccessIdentity: !Join ["", ["origin-access-identity/cloudfront/", !Ref CloudFrontOriginAccessIdentity]]
                 Enabled: true
                 Comment: CDN for photos.
                 DefaultRootObject: index.html
