@@ -12,7 +12,7 @@ provider:
     region: ${file(../serverless/provider-settings.yml):region}
     runtime: ${file(../serverless/provider-settings.yml):runtime}
     stage: ${opt:stage,'dev'}
-    logRetentionInDays: ${file(${self:projectDir}serverless/provider-settings.yml):logRetentionInDays}
+    logRetentionInDays: ${file(../serverless/provider-settings.yml):logRetentionInDays}
     stackPolicy:
     -   Effect: Allow
         Principal: '*'
