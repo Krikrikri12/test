@@ -5,10 +5,10 @@ service: test
 
 provider:
     name: aws
-    region: ${file(../common/serverless/provider-settings.yml):region}
-    runtime: ${file(../common/serverless/provider-settings.yml):runtime}
+    region: us-east-1
+    runtime: nodejs10.x
     stage: ${opt:stage,'dev'}
-    logRetentionInDays: ${file(../common/serverless/provider-settings.yml):logRetentionInDays}
+    logRetentionInDays: 30
     stackPolicy:
     -   Effect: Allow
         Principal: '*'
