@@ -35,8 +35,8 @@ custom:
     appName: eventsapp
     dynamoDbTablePrefix: ${self:custom.appName}-${self:provider.stage}
     cognitoResourcePrefix: ${self:custom.appName}-${self:provider.stage}
-    photosBucketName: ${self:custom.appName}-photos-${self:provider.stage} # TODO: change this to something globally unique
-    hostedLoginDomain: ${self:custom.appName}-photosBucket-${self:provider.stage} # TODO: change this to something globally unique
+    photosBucketName: ${self:custom.appName}-photosbucket-${self:provider.stage} # TODO: change this to something globally unique
+    hostedLoginDomain: ${self:custom.appName}-photosbucket-${self:provider.stage} # TODO: change this to something globally unique
 
 resources:
     - ${file(resources/s3-cloudfront-resources.yml)}
