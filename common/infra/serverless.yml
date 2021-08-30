@@ -3,6 +3,9 @@ org: krikrikri12
 app: test
 service: test
 
+useDotenv: true
+variablesResolutionMode: 20210326
+
 provider:
     name: aws
     region: ${file(../serverless/provider-settings.yml):region}
