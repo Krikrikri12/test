@@ -47,6 +47,5 @@ resources:
             Value: !Ref 'AWS::AccountId'
         DynamoDBTablePrefix:
             Value: ${self:custom.dynamoDbTablePrefix}
-
 plugins:
-- serverless-pseudo-parameters
+  - serverless-pseudo-parameters
