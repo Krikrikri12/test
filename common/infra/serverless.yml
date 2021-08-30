@@ -1,7 +1,7 @@
 # Stack containing core shared infrastructure resources for the eventsapp sample app.
-org: krikrikri12
-app: test
-service: test
+#org: krikrikri12
+#app: test
+service: my-fullstack-app
 
 useDotenv: true
 variablesResolutionMode: 20210326
